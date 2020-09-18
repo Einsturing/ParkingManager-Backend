@@ -1,0 +1,26 @@
+
+spring:
+  main:
+    web-application-type: none
+  datasource:
+    druid:
+      url: jdbc:mysql://121.36.155.143:3306/parking_system?useUnicode=true&characterEncoding=gbk&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      username: root
+      password: 870010
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+  mvc:
+    static-path-pattern: /img/**
+
+mybatis:
+  type-aliases-package: com.example.pm.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+server:
+  port: 8080

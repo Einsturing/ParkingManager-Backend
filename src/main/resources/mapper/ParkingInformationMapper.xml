@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.pm.dao.ParkingInformationMapper">
+  <resultMap id="BaseResultMap" type="com.example.pm.entity.ParkingInformation">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="plate" jdbcType="VARCHAR" property="plate" />
+    <result column="departuretime" jdbcType="BIGINT" property="departuretime" />
+    <result column="fee" jdbcType="BIGINT" property="fee" />
+    <result column="entrytime" jdbcType="BIGINT" property="entrytime" />
+  </resultMap>
+</mapper>
